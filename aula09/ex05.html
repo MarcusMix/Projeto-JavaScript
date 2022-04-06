@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM ?</title>
+    <style>
+        body {
+            background: rgb(182, 199, 25);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Usando a merda do <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.getElementsByTagName("body")[0]
+        var paragrafo1 = window.document.getElementsByTagName("p")[1]
+        var d = window.document.getElementById('msg')
+        d.style.background = "blue"
+        d.innerText = "estou fumando"
+       
+    </script>
+</body>
+</html> 
